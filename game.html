@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>DICE</title>
+        <link rel="icon" type="image/png" href="images/five.png"/>
+    </head>
+    <body>
+        <header><h1 id="dice-title">DICE</h1></header>
+        <section>
+            <div id="game-score-tracker">
+                <h2 id="game-score-el">GAME SCORE</h2>
+                <p id="game-score-me-el">Me: 0</p>
+                <p id="game-score-comp-el">Computer: 0</p>
+                <img id="diceCombi-reminder" src="images/diceCombi1.png" alt="Dice Combinations" style="width: 400px; height: 129px;"/>
+            </div>
+            <div id="game-current-state">
+                <div id="score-and-player-info">
+                    <div id="score"><h2 id="turn-score-el">THIS TURN'S SCORE</h2>
+                                    <p id="turn-score">0</p></div>
+                    <div id="player"><h2 id="whose-turn-el">Whose turn:</h2>
+                                    <button id="my-turn-btn">mine</button>
+                                    <button id="comp-turn-btn">computer's</button></div>
+                </div>
+                
+                <div id="dice-and-buttons">
+                    <img id="dice1" src="images/locked_dice.png" alt="Dice 1" style="width: 60px; height: 60px;"/>
+                    <img id="dice2" src="images/locked_dice.png" alt="Dice 2" style="width: 60px; height: 60px;"/>
+                    <img id="dice3" src="images/locked_dice.png" alt="Dice 3" style="width: 60px; height: 60px;"/>
+                    <img id="dice4" src="images/locked_dice.png" alt="Dice 4" style="width: 60px; height: 60px;"/>
+                    <img id="dice5" src="images/locked_dice.png" alt="Dice 5" style="width: 60px; height: 60px;"/>
+                    <img id="dice6" src="images/locked_dice.png" alt="Dice 6" style="width: 60px; height: 60px;"/>
+                    
+                    <p id="instruction-message"><em><em></p>
+                    <button id="roll-btn">roll</button>
+                    <button id="end-turn-btn">end turn</button>
+                </div>
+            </div>
+        </section>
+        
+        <script src="game.js"></script>
+    </body>
+</html>

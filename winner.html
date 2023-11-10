@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>DICE</title>
+        <link rel="icon" type="image/png" href="images/five.png"/>
+    </head>
+    <body id="body">
+        <h1 id="dice-title">DICE</h1>
+        <section id="left-side">
+            <h2 id="winner-text"></h2>
+        </section>
+
+        <aside id="btn-group">
+            <button id="to-rules-btn"><a id="to-rules-link" href="index.html">to rules</a></button>
+            <button id="play-again-btn"><a id="play-again-link" href="first-player.html">play again</a></button>
+        </aside>
+
+        <script type="text/javascript">
+            const winnerName = localStorage.getItem("winner")
+            if (winnerName === "Me") {
+                document.getElementById("left-side").innerHTML += `<img id="computer-won" alt="winner image" src="images/you_won.gif">`
+            } else {
+                document.getElementById("left-side").innerHTML += `<img id="computer-won" alt="winner image" src="images/computer_won.png">`
+            }
+        </script>
+        
+    </body>
+</html>

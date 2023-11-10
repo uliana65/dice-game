@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>DICE</title>
+        <link rel="icon" type="image/png" href="images/five.png"/>
+    </head>
+    <body>
+        <h1 id="dice-title">DICE</h1>
+        <h2 id="first-player-text">Who will roll first?</h2>
+        <button id="i-start-btn"><a id="i-start-link" href="game.html">me</a></button>
+        <button id="computer-starts-btn"><a href="game.html">computer</a></button>
+
+        <script type="text/javascript">
+            document.getElementById("i-start-btn").addEventListener("click", function() {
+                localStorage.setItem('iStartBtnPressed', 'true')
+            })
+            document.getElementById("computer-starts-btn").addEventListener("click", function() {
+                localStorage.setItem('iStartBtnPressed', 'false')
+            })
+        </script>
+        
+    </body>
+</html>
