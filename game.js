@@ -196,9 +196,9 @@ function endTurn(player) {
     updateTurnScore(player, 0)
 
     // check if someone reached 500pt
-    if (playerComputer.gameScore > 500) {
+    if (playerComputer.gameScore >= 500) {
         endGame(playerComputer)
-    } else if (playerUser.gameScore > 500) {
+    } else if (playerUser.gameScore >= 500) {
         endGame(playerUser)
     } else {
         // pass turn to other player
