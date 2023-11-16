@@ -50,6 +50,8 @@ function usersTurn() {
 
 function computersTurn() {
     updatePlayerTurn(playerUser)
+    rollBtn.disabled = true
+    endTurnBtn.disabled = true
     playerComputer.availableDice = 6
     playerComputer.isActive = true
     setTimeout(() => {computerPlays()}, 1000)
