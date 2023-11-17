@@ -158,7 +158,7 @@ function rollDice(player)  {
     let rolledDice = []
     
     for (let i = 0; i < player.availableDice; i++) {
-        document.getElementById(`dice${i+1}`).setAttribute("src", `images/dice${dice[i]}.jpg`)
+        document.getElementById(`dice${i+1}`).setAttribute("src", `images/dice${dice[i]}.png`)
         rolledDice.push(dice[i])
     }
 
